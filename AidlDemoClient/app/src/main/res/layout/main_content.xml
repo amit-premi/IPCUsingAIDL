@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="amit.com.aidl.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/main_txtView_title"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="Sample Demo Test Features"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/main_btn_std_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Detail List"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/main_txtView_std_title"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="7dp" />
+
+    <Button
+        android:id="@+id/main_btn_AidlTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aidl Test"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/main_txtView_std_title"
+        android:layout_marginStart="22dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintLeft_toRightOf="@+id/main_btn_std_details" />
+
+    <TextView
+        android:id="@+id/main_txtView_std_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Employee Details Service"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/main_btn_click"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="13dp" />
+
+
+    <Button
+        android:id="@+id/main_btn_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Employee Details"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="99dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/main_txtView_details"
+        android:layout_marginStart="99dp"
+        android:layout_marginBottom="11dp" />
+
+
+    <TextView
+        android:id="@+id/main_txtView_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Details Response"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="205dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
